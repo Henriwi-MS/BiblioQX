@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel | BiblioQX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+    <div class="topo">
+      <a class="marca" href="admin.html">
+        <img src="logo-simbolo.png" alt="Logo da Biblioteca de Quixadá" />
+        <span>BiblioQX · Bibliotecário</span>
+      </a>
+
+      <nav>
+        <a href="admin.html">Painel</a>
+        <a href="#cadastro">Cadastrar livro</a>
+        <a href="#emprestimos">Empréstimos</a>
+        <a class="sair" href="login.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="linha">
+      <main>
+        <h1>Visão geral</h1>
+
+        <div class="numeros">
+          <div class="numero">
+            <span>Usuários</span>
+            <p>60</p>
+          </div>
+          <div class="numero">
+            <span>Livros</span>
+            <p>12</p>
+          </div>
+          <div class="numero">
+            <span>Empréstimos ativos</span>
+            <p>30</p>
+          </div>
+          <div class="numero atraso">
+            <span>Atrasados</span>
+            <p>8</p>
+          </div>
+        </div>
+
+        <div class="duas">
+          <section class="tabela" id="emprestimos">
+            <table>
+              <caption>Empréstimos recentes</caption>
+              <tr>
+                <th>Leitor</th>
+                <th>Livro</th>
+                <th>Devolução</th>
+                <th>Status</th>
+                <th>Ação</th>
+              </tr>
+              <tr>
+                <td>João Silva</td>
+                <td>Vidas Secas</td>
+                <td>17/01/2026</td>
+                <td><span class="tag">Ativo</span></td>
+                <td><button>Registrar devolução</button></td>
+              </tr>
+              <tr>
+                <td>João Silva</td>
+                <td>Capitães da Areia</td>
+                <td>07/01/2026</td>
+                <td><span class="tag tag-vermelha">Atrasado</span></td>
+                <td><button>Registrar devolução</button></td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="cartao" id="cadastro">
+            <h2>Cadastrar livro</h2>
+
+            <form>
+              <div class="campo">
+                <label for="t">Título</label>
+                <input type="text" id="t" required />
+              </div>
+              <div class="campo">
+                <label for="a">Autor</label>
+                <input type="text" id="a" required />
+              </div>
+              <div class="campo">
+                <label for="i">ISBN</label>
+                <input type="text" id="i" />
+              </div>
+              <div class="campo">
+                <label for="e">Editora</label>
+                <input type="text" id="e" required />
+              </div>
+              <div class="campo">
+                <label for="y">Ano de publicação</label>
+                <input type="text" id="y" required />
+              </div>
+              <div class="campo">
+                <label for="c">Categoria</label>
+                <input type="text" id="c" required />
+              </div>
+              <div class="campo">
+                <label for="n">Número de exemplares</label>
+                <input type="text" id="n" required />
+              </div>
+              <button type="submit">Cadastrar livro</button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+

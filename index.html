@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acervo | BiblioQX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="logo-simbolo.png" alt="Logo da Biblioteca de Quixadá" />
+        <span>BiblioQX</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Acervo</a>
+        <a href="login.html">Entrar</a>
+        <a href="cadastro.html">Cadastrar</a>
+      </nav>
+    </div>
+
+    <div class="capa">
+      <img src="logo-completo.png" alt="Biblioteca Pública de Quixadá" />
+      <div>
+        <h1>Biblioteca Municipal de Quixadá</h1>
+        <p>Consulte o acervo, reserve e renove livros sem sair de casa.</p>
+      </div>
+    </div>
+
+    <div class="linha">
+      <main>
+        <form class="filtros">
+          <div class="campo">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" placeholder="Ex.: Vidas Secas" />
+          </div>
+
+          <div class="campo">
+            <label for="autor">Autor</label>
+            <input type="text" id="autor" />
+          </div>
+
+          <div class="campo">
+            <label for="editora">Editora</label>
+            <input type="text" id="editora" />
+          </div>
+
+          <div class="campo">
+            <label for="ano">Ano de publicação</label>
+            <input type="text" id="ano" placeholder="1938" />
+          </div>
+
+          <button type="submit">Filtrar</button>
+        </form>
+
+        <div class="acervo">
+          <article class="livro">
+            <div class="capa-livro">Vidas Secas</div>
+            <h3>Vidas Secas</h3>
+            <p>Graciliano Ramos</p>
+            <span class="tag">3 exemplares disponíveis</span>
+            <a class="botao botao-claro" href="login.html">Ver detalhes</a>
+          </article>
+
+          <article class="livro">
+            <div class="capa-livro c2">Grande Sertão: Veredas</div>
+            <h3>Grande Sertão: Veredas</h3>
+            <p>João Guimarães Rosa</p>
+            <span class="tag tag-vermelha">Todos emprestados</span>
+            <a class="botao botao-claro" href="login.html">Reservar</a>
+          </article>
+
+          <article class="livro">
+            <div class="capa-livro c3">Capitães da Areia</div>
+            <h3>Capitães da Areia</h3>
+            <p>Jorge Amado</p>
+            <span class="tag">1 exemplar disponível</span>
+            <a class="botao botao-claro" href="login.html">Ver detalhes</a>
+          </article>
+
+          <article class="livro">
+            <div class="capa-livro c2">O Cortiço</div>
+            <h3>O Cortiço</h3>
+            <p>Aluísio Azevedo</p>
+            <span class="tag">2 exemplares disponíveis</span>
+            <a class="botao botao-claro" href="login.html">Ver detalhes</a>
+          </article>
+
+          <article class="livro">
+            <div class="capa-livro">Dom Casmurro</div>
+            <h3>Dom Casmurro</h3>
+            <p>Machado de Assis</p>
+            <span class="tag tag-amarela">Já reservado por você</span>
+            <a class="botao botao-claro" href="login.html">Ver detalhes</a>
+          </article>
+
+          <article class="livro">
+            <div class="capa-livro c3">O Menino Maluquinho</div>
+            <h3>O Menino Maluquinho</h3>
+            <p>Ziraldo · Acervo infantil</p>
+            <span class="tag">4 exemplares disponíveis</span>
+            <a class="botao botao-claro" href="login.html">Ver detalhes</a>
+          </article>
+        </div>
+
+        <nav class="paginacao">
+          <a class="botao botao-claro" href="#">Anterior</a>
+          <a class="botao" href="#">1</a>
+          <a class="botao botao-claro" href="#">2</a>
+          <a class="botao botao-claro" href="#">Próxima</a>
+        </nav>
+      </main>
+    </div>
+  </body>
+</html>
+

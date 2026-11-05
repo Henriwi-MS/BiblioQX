@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empréstimos | BiblioQX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="logo-simbolo.png" alt="Logo da Biblioteca de Quixadá" />
+        <span>BiblioQX</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Acervo</a>
+        <a href="emprestimos.html">Empréstimos</a>
+        <a href="multas.html">Multas</a>
+        <a class="sair" href="login.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="linha">
+      <main>
+        <h1>Meus empréstimos</h1>
+
+        <table>
+          <caption>Empréstimos ativos</caption>
+          <tr>
+            <th>Livro</th>
+            <th>Empréstimo</th>
+            <th>Devolução prevista</th>
+            <th>Status</th>
+            <th>Ação</th>
+          </tr>
+          <tr>
+            <td>Vidas Secas</td>
+            <td>10/01/2026</td>
+            <td>24/01/2026</td>
+            <td><span class="tag">Em dia</span></td>
+            <td><button>Renovar</button></td>
+          </tr>
+          <tr>
+            <td>Dom Casmurro</td>
+            <td>02/01/2026</td>
+            <td>16/01/2026</td>
+            <td><span class="tag tag-vermelha">Em atraso</span></td>
+            <td><button>Renovar</button></td>
+          </tr>
+        </table>
+
+        <p class="erro">Renovação indisponível: este livro já foi reservado por outro leitor.</p>
+        <p class="apoio">Limite: 2 livros do acervo geral e 2 do acervo infantil.</p>
+
+        <h2>Histórico</h2>
+
+        <table>
+          <caption>Empréstimos anteriores</caption>
+          <tr>
+            <th>Livro</th>
+            <th>Retirada</th>
+            <th>Devolução</th>
+            <th>Dias emprestado</th>
+          </tr>
+          <tr>
+            <td>O Cortiço</td>
+            <td>03/11/2025</td>
+            <td>15/11/2025</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
+

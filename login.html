@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrar | BiblioQX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="entrada">
+      <section class="cartao">
+        <img src="logo-completo.png" alt="Biblioteca Pública de Quixadá" />
+        <h1>Entrar</h1>
+
+        <form>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="nome@email.com" required />
+          </div>
+
+          <div class="campo">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required />
+          </div>
+
+          <p class="erro">Senha incorreta. Após 3 tentativas, o acesso é bloqueado.</p>
+
+          <p>
+            <a class="botao" href="emprestimos.html">Entrar como leitor</a>
+          </p>
+          <p>
+            <a class="botao botao-claro" href="admin.html">Entrar como bibliotecário</a>
+          </p>
+        </form>
+
+        <p class="apoio">
+          Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a> ou
+          <a href="index.html">volte ao acervo</a>.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
+

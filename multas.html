@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multas | BiblioQX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="logo-simbolo.png" alt="Logo da Biblioteca de Quixadá" />
+        <span>BiblioQX</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Acervo</a>
+        <a href="emprestimos.html">Empréstimos</a>
+        <a href="multas.html">Multas</a>
+        <a class="sair" href="login.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="linha">
+      <main>
+        <h1>Minhas multas</h1>
+
+        <table>
+          <caption>Multas pendentes</caption>
+          <tr>
+            <th>Livro</th>
+            <th>Dias de atraso</th>
+            <th>Valor</th>
+            <th>Status</th>
+            <th>Ação</th>
+          </tr>
+          <tr>
+            <td>Dom Casmurro</td>
+            <td>18</td>
+            <td>R$ 9,00</td>
+            <td><span class="tag tag-vermelha">Pendente</span></td>
+            <td><button>Pagar</button></td>
+          </tr>
+        </table>
+
+        <p>
+          <span class="negrito">Total pendente: R$ 9,00</span>
+          (R$ 0,50 por dia de atraso)
+        </p>
+        <p class="apoio"><em>Sem multas:</em> "Você não possui multas pendentes".</p>
+      </main>
+    </div>
+  </body>
+</html>
+
